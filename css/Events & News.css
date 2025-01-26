@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.events-news-page{
+    /* margin-top: 150px; */
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0E1A40;
+    color: #FFC500;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #FFC500; /* Gryffindor Gold */
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+}
+
+.actions button {
+    padding: 8px 15px;
+    background-color: #7F0909; /* Gryffindor Red */
+    color:white;
+    border: none;
+    transition: background-color 0.3s;
+    font-family:Gill Sans MT Italic;
+    cursor: pointer;
+}
+
+/* Sidebar Styling */
+.side-nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 100px;
+    width: 200px;
+    height: calc(100vh - 160px);
+    background-color: #0E1A40;
+    color: #FFC500;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.side-nav .nav-header {
+    font-family: Gill Sans MT Italic;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20;
+    text-align: center;
+}
+
+.side-nav button {
+    display: block;
+    width: 100%;
+    margin: 18.5px 0;
+    padding: 10px;
+    background-color: #7F0909; /* Gryffindor Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Gill Sans MT Italic;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.side-nav button:hover {
+    background-color: #FFC500; /* Gryffindor Gold */
+    color: #0E1A40; /* Ravenclaw Blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.side-nav button:active {
+    transform: scale(0.95); /* Button press effect */
+}
+  
+/* Footer Styling */
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E1A40; /* Ravenclaw Blue */
+    color: #FFC500; /* Gryffindor Gold */
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    font-family: Gill Sans MT;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 130px;
+}
+
+.site-footer h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+/* Footer Left Section */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fefefe;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFFFFF;
+}
+
+/* Footer Center Section */
+.footer-center {
+    text-align: center;
+    /* flex: 1; */
+    font-size: 14px;
+}
+
+/* Footer Right Section */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer is always at the bottom */
+}
+  
+.content-wrapper {
+    flex-grow: 1;
+}
+
+/*Events Section*/
+.events-news-container {
+    margin-top: 200px;
+    margin-left: 255px;
+    padding-right: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.event-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #AAAAAA;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-section .text-content {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 20px; 
+}
+
+.event-section .image-content img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.apply-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #7F0909;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover{
+    background-color: #FFC500; /* Gryffindor Gold */
+    color: #0E1A40; /* Ravenclaw Blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/*Calender Section*/
+.calendar-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar .month {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar .weekdays, .calendar .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 10px;
+}
+
+.calendar .weekdays span {
+    font-weight: bold;
+}
+
+.calendar .days span {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #AAAAAA;
+}
+
+.calendar .days .inactive {
+    color: #ccc;
+    background-color: transparent;
+}
+
+/* Container for News Items */
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #AAAAAA;
+}
+
+/* News Section Title */
+.news-section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #06570e;
+    margin-bottom: 40px;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* Styling for Each News Item */
+.news-item {
+    display: flex;
+    align-items: center;
+    background-color: #5D5D5D;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 50px;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-item img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: top center;
+}
+
+.news-item .content {
+    padding: 20px;
+    width: 60%;
+}
+
+.news-item h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news-item p {
+    font-size: 1.15em;
+    color: #F5F5F5;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .news-item .content {
+        width: 100%;
+    }
+
+    .news-item h2 {
+        font-size: 1.6em;
+    }
+
+    .news-item p {
+        font-size: 1em;
+    }
+
+    .read-more-btn {
+        padding: 10px 18px;
+        font-size: 1em;
+    }
+}

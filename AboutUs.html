@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css\aboutus.css"> <!-- Link to the CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> <!-- Font -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="top-header">
+        <div class="branding">Hogwarts Wizardry Arcade</div>
+        <div class="actions">
+            <input type="text" placeholder="Search for magic...">
+            <button>Login</button>
+            <button>Register</button>
+            <button>Cart</button>
+        </div>
+    </header>
+        <aside class="side-nav">
+            <ul>
+                <button onclick="location.href='index.html'">Home</button>
+                <button onclick="location.href='AboutUs.html'">About Us</button>
+                <button onclick="location.href='Console.html'">Consoles</button>
+                <button onclick="location.href='games.html'">Games</button>
+                <button onclick="location.href='upcoming.html'">Upcoming Games</button>
+                <button onclick="location.href='Events & News.html'">Events & News</button>
+                <button onclick="location.href='FAQ.html'">Queries & FAQ</button>
+            </ul>
+        </aside>
+        <body>
+            <div class="events-news-container">
+              <!-- Section1 -->
+              <section class="Section1">
+                <div class="left-text">
+                  <h2>Still waiting for letter from Hogwarts?</h2><br><br>
+                    <p>Enter a world where magic and gaming collide! At Hogwarts Wizardry Arcade, we bring the wizarding universe to life with 12 upcoming games, divided into four Hogwarts houses: Gryffindor, Slytherin, Ravenclaw, and Hufflepuff, 
+                        each offering exciting new adventures for every kind of wizard.
+                        Discover our Consoles and Gaming Peripherals Page, stocked with all the magical gear you need for an epic gaming experience. Along with 16 games to explore,
+                        we also have 2 live events happening soon and 2 more on the horizon, making sure the magic never ends!                       
+                        Join us at Hogwarts Wizardry Arcade and embark on a spellbinding journey—there’s always more magic to uncover!
+                    </p><br>
+                    <p><strong>ARE YOU IN TO WIZARD WORLD?</strong></p><br>
+                    <p><strong>HERE IS YOUR LUCKY CHANCE!</strong></p>
+                </div>
+                <div class="right-image">
+                  <img src="C:\Users\Welcome\Desktop\Gaming Website\Images\Aboutus.jpg" alt="Event 1">
+                </div>
+              </section>
+
+            <!-- Second Section (Grid of 5 images) -->
+    <section class="section-two">
+        <div class="container swiper">
+            <h2>Our Games</h2>
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid1.jpg" class="card-image">
+                        </a>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid2.jpg" class="card-image">
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid3.jpg" class="card-image">
+                        </a>
+                    </li>
+                   
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid4.jpg" class="card-image">
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid5.jpg" class="card-image">
+                        </a>
+                    </li>
+                    
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="Images/Grid6.jpg" class="card-image">
+                        </a>
+                    </li>
+                </ul>
+    
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+                <!-- Section 3: Join Our Team Form -->
+                <section class="join-team-section">
+                    <h2>Join Our Team</h2>
+                    <p>We are always looking for passionate gamers to join our team. Fill out the form below to apply!</p>
+                    <div class="form-container">
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" placeholder="Your age">
+                            
+                            <label for="position">Position:</label>
+                            <input type="text" id="position" name="position" placeholder="Desired position">
+                            
+                            <label for="why">Why:</label>
+                            <textarea id="why" name="why" placeholder="Tell us why you'd be a great fit"></textarea>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Section 4: Map -->
+                <section class="hogwarts-map">
+                    <h1>Find Hogwarts on the Map</h1>
+                    <div id="map"></div>
+                </section>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+            // Initialize the map
+            var map = L.map('map').setView([56.4907, -4.2026], 13); // Approximate location of Hogwarts (Scotland)
+
+            // Add a tile layer (Map from OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add a marker for Hogwarts
+            L.marker([56.4907, -4.2026]).addTo(map)
+                .bindPopup("<b>Hogwarts School of Witchcraft and Wizardry</b><br>Scotland, UK")
+                .openPopup();
+        </script>
+    <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="footer-left">
+                    <h3 class="brand-name">Hogwarts Wizardry Arcade</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <p>&copy; All Rights Reserved</p>
+                </div>
+                <div class="footer-right">
+                    <h4>Accepted Payment Methods</h4>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+        </footer>
+    </body>
+        
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <script>
+        new Swiper('.card-wrapper', {  
+  loop: true,  
+  speed: 700,  
+  spaceBetween: 30,  
+
+  // If we need pagination  
+  pagination: {  
+    el: '.swiper-pagination',  
+    clickable: true,  
+    dynamicBullets: true,  
+  },  
+
+  // Navigation arrows  
+  navigation: {  
+    nextEl: '.swiper-button-next',  
+    prevEl: '.swiper-button-prev',  
+  },  
+  
+  breakpoints: { 
+    0: {  
+      slidesPerView: 1  
+    },  
+    768: {  
+      slidesPerView: 2  
+    },  
+    1024: {  
+      slidesPerView: 3  
+    },  
+  }  
+});  
+    </script>

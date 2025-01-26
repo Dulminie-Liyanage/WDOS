@@ -1,0 +1,333 @@
+/* General Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0E1A40;
+    color: #FFC500;
+    /* border-bottom: 2px solid white; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #FFC500; /* Gryffindor Gold */
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+}
+
+.actions button {
+    padding: 8px 15px;
+    background-color: #7F0909; /* Gryffindor Red */
+    color:white;
+    border: none;
+    transition: background-color 0.3s;
+    font-family:Gill Sans MT Italic;
+    cursor: pointer;
+}
+
+/* Sidebar Styling */
+.side-nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 100px;
+    width: 200px;
+    height: calc(100vh - 160px);
+    background-color: #0E1A40;
+    color: #FFC500;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.side-nav .nav-header {
+    font-family: Gill Sans MT Italic;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20;
+    text-align: center;
+}
+
+.side-nav button {
+    display: block;
+    width: 100%;
+    margin: 18.5px 0;
+    padding: 10px;
+    background-color: #7F0909; /* Gryffindor Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Gill Sans MT Italic;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.side-nav button:hover {
+    background-color: #FFC500; /* Gryffindor Gold */
+    color: #0E1A40; /* Ravenclaw Blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.side-nav button:active {
+    transform: scale(0.95); /* Button press effect */
+}
+  
+/* Footer Styling */
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E1A40; /* Ravenclaw Blue */
+    color: #FFC500; /* Gryffindor Gold */
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    font-family: Gill Sans MT;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 130px;
+}
+
+.site-footer h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+/* Footer Left Section */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fefefe;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFFFFF;
+}
+
+/* Footer Center Section */
+.footer-center {
+    text-align: center;
+    /* flex: 1; */
+    font-size: 14px;
+}
+
+/* Footer Right Section */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Banner Image */
+.banner {
+    position: relative; /* Enables positioning text over the image */
+    width: 100%; /* Makes the banner span the full width of the container */
+    overflow: hidden; /* Ensures no overflow of the image */
+  }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+    height: 350px;
+    object-position: center center;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%; /* Adjust size as needed */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Keeps the image aspect ratio intact */
+  }
+  
+  .text-overlay {
+    position: absolute; /* Allows positioning over the image */
+    left: 50%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for perfect centering */
+    color: #fff; /* White text for visibility */
+    font-size: 34px; /* Adjust text size */
+    font-weight: bold; /* Make the text stand out */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
+    text-align: center; /* Center the text */
+    white-space: nowrap; /* Ensures the text stays in one line */
+    margin-top: -120px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the boxes */
+    gap: 20px; /* Adds spacing between the boxes */
+    padding: 20px; /* Adds padding around the section */
+    background-color: #f4f4f4; /* Optional: background color for the section */
+  }
+  
+  .text-box {
+    flex: 1; /* Ensures each box takes equal width */
+    padding: 30px 20px; /* Adds padding inside each box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for boxes */
+    border: 1px solid #ccc; /* Optional: border for each box */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .left-box {
+    text-align: left; /* Left-aligns text in the left box */
+    font-family: 'Lora', serif;
+  }
+  
+  .right-box {
+    text-align: left; /* Left-aligns text in the right box */
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Games Container */
+  .container {
+    background: #191970, #000000;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+  }
+
+  .container1 h2{
+    padding: 10px 0px 10px 5px;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px; /* Space between grid items */
+}
+
+.box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px 20px;
+    background: #5D5D5D;
+}
+
+.box img {
+    object-position: top center;
+    width: 288px;
+    height: 410px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.box h3 {
+    color: white;
+    font-size: 22px;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box p {
+    color: #F5F5F5;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-content{
+    flex-grow: 1; /* Allow the main content to take the remaining space */
+    margin-left: 200PX; /* Sidebar width */
+    padding: 20px;
+    background-color: #AAAAAA;
+    min-height: calc(100vh - 160px); /* Full height minus header and footer */
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100px;
+        padding: 15px;
+    }
+
+    .side-nav .nav-header {
+        font-size: 20px;
+    }
+
+    .side-nav button {
+        font-size: 14px;
+    }
+}
+
+.actions button:hover {
+    background-color: #FFC500; /* Gryffindor Gold */
+    color: #000;
+}
+
+.main-content{
+    text-decoration: none;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer is always at the bottom */
+  }
+  
+  .content-wrapper {
+    flex-grow: 1;
+  }
