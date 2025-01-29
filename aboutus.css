@@ -1,0 +1,426 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0E1A40;
+    color: #FFC500;
+    /* border-bottom: 2px solid white; */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #FFC500;
+    /* Gryffindor Gold */
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #AAA;
+}
+
+.actions button {
+    padding: 8px 15px;
+    background-color: #7F0909;
+    /* Gryffindor Red */
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+    font-family: Gill Sans MT Italic;
+    cursor: pointer;
+}
+
+/* Sidebar Styling */
+.side-nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 100px;
+    width: 200px;
+    height: calc(100vh - 160px);
+    background-color: #0E1A40;
+    color: #FFC500;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    z-index: 2;
+}
+
+.side-nav .nav-header {
+    font-family: Gill Sans MT Italic;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20;
+    text-align: center;
+}
+
+.side-nav button {
+    display: block;
+    width: 100%;
+    margin: 18.5px 0;
+    padding: 10px;
+    background-color: #7F0909;
+    /* Gryffindor Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Gill Sans MT Italic;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.side-nav button:hover {
+    background-color: #FFC500;
+    /* Gryffindor Gold */
+    color: #0E1A40;
+    /* Ravenclaw Blue */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+.side-nav button:active {
+    transform: scale(0.95);
+    /* Button press effect */
+}
+
+/* Footer Styling */
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E1A40;
+    /* Ravenclaw Blue */
+    color: #FFC500;
+    /* Gryffindor Gold */
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    font-family: Gill Sans MT;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    gap: 130px;
+    z-index: 2;
+}
+
+.site-footer h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+/* Footer Left Section */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fefefe;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFFFFF;
+}
+
+/* Footer Center Section */
+.footer-center {
+    text-align: center;
+    /* flex: 1; */
+    font-size: 14px;
+}
+
+/* Footer Right Section */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.events-news-container{
+    margin-left: 200px; /* Sidebar width */
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: calc(100vh - 160px); /* Full height minus header and footer */
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.main-content{
+    background-color:#5D5D5D ;
+}
+/* First Section: Image on the Right, Text on the Left */
+.Section1 {
+    display: flex;
+    justify-content: center;
+    background: #aaaaaa;
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+}
+
+.left-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Second Section: Grid of 5 Images */
+.section-two {
+    padding: 20px 0px;
+}
+
+.section-two .swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #aaaaaa;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 20px 50px 40px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    bottom: 25px !important;
+}
+
+.card-wrapper{
+    max-width: 100%;
+    margin: 0 60px 0px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #134e0e;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: #134e0e;
+    margin: 16px 0 18px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background: #dde4ff;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 16px;
+    color: #000;
+    font-weight: 100;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #134e0e;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border: 2px solid #134e0e;
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #134e0e;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #134e0e;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #134e0e;
+    margin-top: -35px;
+} 
+
+@media screen and (max-width: 768px){
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+
+/* Join Team Section */
+.join-team-section {
+    text-align: center;
+    background: #aaaaaa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: rgb(14 26 64);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: rgb(127 9 9);
+}
+
+
+/* Branches Section */
+.branches-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.branch {
+    background-color: #aaaaaa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.branch h2 {
+    color: #333;
+}
+.branch img {
+    height: 210px;
+    width: 280px;
+    max-width: 280px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.hours {
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+}
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+.branches-table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.branches-table th, .branches-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.branches-table th {
+    background-color: #333;
+    color: white;
+}
